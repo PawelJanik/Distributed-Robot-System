@@ -1,0 +1,11 @@
+{
+    "databaseIP" : "IP",
+    "databaseUSER" : "USER",
+    "databasePASSWORD" : "PASSWORD",
+    "databaseNAME" : "NAME",
+    
+    "mqttIP" : "IP",
+    "mqttPORT" : "PORT",
+    "mqttUSER" : "USER",
+    "mqttPASSWORD" : "PASSWORD"
+}

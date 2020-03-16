@@ -1,0 +1,13 @@
+[Unit]
+Description=Motion Analyzer daemon for Distributed Robot System
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/MotionAnalyzer \
+	--conf_file /etc/drs/r1/motion-analyzer.conf \
+	--log_file /var/log/drs/r1/motion-analyzer.log
+User=root
+ExecReload=/bin/kill -HUP $MAINPID
+
+[Install]
+WantedBy=multi-user.target
